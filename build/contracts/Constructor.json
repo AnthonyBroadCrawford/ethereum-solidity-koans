@@ -22,11 +22,11 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x60606040523415600e57600080fd5b600f600081905550609f806100246000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063fc9c8d39146044575b600080fd5b3415604e57600080fd5b6054606a565b6040518082815260200191505060405180910390f35b600080549050905600a165627a7a723058205df25b92bc79b53dde7fafcabdfe9bd2483e886e7f5f3e428320f6b61ac96e6a0029",
-  "deployedBytecode": "0x606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063fc9c8d39146044575b600080fd5b3415604e57600080fd5b6054606a565b6040518082815260200191505060405180910390f35b600080549050905600a165627a7a723058205df25b92bc79b53dde7fafcabdfe9bd2483e886e7f5f3e428320f6b61ac96e6a0029",
-  "sourceMap": "26:447:0:-;;;142:52;;;;;;;;187:2;178:6;:11;;;;26:447;;;;;;",
-  "deployedSourceMap": "26:447:0:-;;;;;;;;;;;;;;;;;;;;;;;;403:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;442:4;460:6;;453:13;;403:68;:::o",
-  "source": "pragma solidity ^0.4.17;\n\ncontract Constructor {\n\n  //publicly accessible variable I can set from within constructor\n  uint public caller;\n\n  function Constructor() public {\n    caller = 15;\n  }\n\n  //\n  //uncommenting this should result in a compiler error as Contracts may only have one constructor\n  //\n  //function Constructor(address contractCaller) public {\n  //  caller = contractCaller;\n  //}\n\n  function caller() public view returns (uint){\n    return caller;\n  }\n}\n",
+  "bytecode": "0x60606040523415600e57600080fd5b600f600081905550609f806100246000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063fc9c8d39146044575b600080fd5b3415604e57600080fd5b6054606a565b6040518082815260200191505060405180910390f35b600080549050905600a165627a7a72305820b4c3d6244065b36eddbbf4aad7dfff59f3b4d6d3d1ea3380668a3e0332a017d30029",
+  "deployedBytecode": "0x606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063fc9c8d39146044575b600080fd5b3415604e57600080fd5b6054606a565b6040518082815260200191505060405180910390f35b600080549050905600a165627a7a72305820b4c3d6244065b36eddbbf4aad7dfff59f3b4d6d3d1ea3380668a3e0332a017d30029",
+  "sourceMap": "26:444:0:-;;;142:52;;;;;;;;187:2;178:6;:11;;;;26:444;;;;;;",
+  "deployedSourceMap": "26:444:0:-;;;;;;;;;;;;;;;;;;;;;;;;400:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;439:4;457:6;;450:13;;400:68;:::o",
+  "source": "pragma solidity ^0.4.17;\n\ncontract Constructor {\n\n  //publicly accessible variable I can set from within constructor\n  uint public caller;\n\n  function Constructor() public {\n    caller = 15;\n  }\n\n  //\n  //uncommenting this should result in a compiler error as Contracts may only have one constructor\n  //\n  //function Constructor(uint contractCaller) public {\n  //  caller = contractCaller;\n  //}\n\n  function caller() public view returns (uint){\n    return caller;\n  }\n}\n",
   "sourcePath": "/Users/abc/crypto-currency/ethereum/tutorials/ethereum-solidity-koans/contracts/Constructor.sol",
   "ast": {
     "attributes": {
@@ -224,7 +224,7 @@
                 "children": [],
                 "id": 12,
                 "name": "ParameterList",
-                "src": "418:2:0"
+                "src": "415:2:0"
               },
               {
                 "children": [
@@ -247,17 +247,17 @@
                         },
                         "id": 13,
                         "name": "ElementaryTypeName",
-                        "src": "442:4:0"
+                        "src": "439:4:0"
                       }
                     ],
                     "id": 14,
                     "name": "VariableDeclaration",
-                    "src": "442:4:0"
+                    "src": "439:4:0"
                   }
                 ],
                 "id": 15,
                 "name": "ParameterList",
-                "src": "441:6:0"
+                "src": "438:6:0"
               },
               {
                 "children": [
@@ -278,32 +278,32 @@
                         },
                         "id": 16,
                         "name": "Identifier",
-                        "src": "460:6:0"
+                        "src": "457:6:0"
                       }
                     ],
                     "id": 17,
                     "name": "Return",
-                    "src": "453:13:0"
+                    "src": "450:13:0"
                   }
                 ],
                 "id": 18,
                 "name": "Block",
-                "src": "447:24:0"
+                "src": "444:24:0"
               }
             ],
             "id": 19,
             "name": "FunctionDefinition",
-            "src": "403:68:0"
+            "src": "400:68:0"
           }
         ],
         "id": 20,
         "name": "ContractDefinition",
-        "src": "26:447:0"
+        "src": "26:444:0"
       }
     ],
     "id": 21,
     "name": "SourceUnit",
-    "src": "0:474:0"
+    "src": "0:471:0"
   },
   "compiler": {
     "name": "solc",
@@ -317,5 +317,5 @@
     }
   },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-03-06T04:13:21.039Z"
+  "updatedAt": "2018-03-09T03:23:25.609Z"
 }
